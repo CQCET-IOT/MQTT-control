@@ -1,4 +1,4 @@
-# OneNET 网页控制MQTT设备
+# 自建WEB服务 网页控制MQTT设备
 
 ---
 
@@ -67,18 +67,16 @@
 
 ## 部署
 
-将生成的 *-control-0.0.1-SNAPSHOT.jar* 拷贝到服务器上。
-
-在服务器上安装 JDK1.8，然后运行：
+在服务器上安装 JDK1.8，将生成的 **MQTT-control-0.0.1-SNAPSHOT.jar** 拷贝到自建的服务器上，假设ip为127.0.0.1。然后运行：
 
 ```
 java -jar MQTT-light-control-0.0.1-SNAPSHOT.jar --server.port=80
 ```
 
-这样，在 *www.xxxx.top* 服务器上，Web 程序监听 80 端口
+这样，在 *127.0.0.1* 服务器上，启动Web 服务监听 80 端口
 
 ## 使用
 
-浏览器访问 *www.xxxx.top* 地址，打开如下页面：
+浏览器访问 *http://127.0.0.1* 地址，打开如下页面：
 
 
